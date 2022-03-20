@@ -24,6 +24,9 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	runtimeOnly("mysql:mysql-connector-java")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+// https://mvnrepository.com/artifact/org.springframework.hateoas/spring-hateoas
+	implementation("org.springframework.hateoas:spring-hateoas:1.4.1")
+
 }
 
 tasks.withType<KotlinCompile> {

@@ -43,7 +43,7 @@ data class TravelRequest(
     val origin: String,
     val destination: String,
     val status: TravelRequestStatus = TravelRequestStatus.CREATED,
-        val creation: LocalDateTime = LocalDateTime.now()
+    val creationDate: LocalDateTime = LocalDateTime.now()
 )
 
 data class TravelRequestInput(
@@ -55,3 +55,11 @@ data class TravelRequestInput(
 enum class TravelRequestStatus{
     CREATED, ACCEPTED, REFUSED
 }
+
+data class TravelRequestOutput(
+    val id: Long,
+    val origin: String,
+    val destination: String,
+    val status: TravelRequestStatus,
+    val creationDate: LocalDateTime
+)

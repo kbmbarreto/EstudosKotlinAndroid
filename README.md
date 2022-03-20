@@ -8,6 +8,7 @@
 - Gradle
 - MySql
 - Spring Framework
+- HATEOAS
 - Wiremock
 
 ## Preparação do ambiente
