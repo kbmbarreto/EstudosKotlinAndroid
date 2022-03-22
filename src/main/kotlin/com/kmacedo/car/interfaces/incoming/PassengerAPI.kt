@@ -1,4 +1,4 @@
-package com.kmacedo.car.interfaces
+package com.kmacedo.car.interfaces.incoming
 
 import com.kmacedo.car.domain.Passenger
 import com.kmacedo.car.domain.PassengerRepository

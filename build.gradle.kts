@@ -26,6 +26,7 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 // https://mvnrepository.com/artifact/org.springframework.hateoas/spring-hateoas
 	implementation("org.springframework.hateoas:spring-hateoas:1.4.1")
+	implementation("com.jayway.jsonpath:json-path")
 
 }
 

@@ -9,6 +9,8 @@
 - MySql
 - Spring Framework
 - HATEOAS
+- Google API
+- JSONPath
 - Wiremock
 
 ## Preparação do ambiente
@@ -34,3 +36,4 @@ Em seguida, basta criar um banco de dados no MySql com o comando `Create schema 
 
 - [Configurar variáveis de ambiente JAVA](https://mauriciogeneroso.medium.com/configurando-java-4-como-configurar-as-vari%C3%A1veis-java-home-path-e-classpath-no-windows-46040950638f)
 - [Configurar variáveis de ambiente Graddle](https://giordanolins.com/instalando-e-configurando-o-gradle-no-windows/)
+- [Endereço para configuração da API do Google](https://developers.google.com/maps/documentation/directions/quickstart#sample-request)

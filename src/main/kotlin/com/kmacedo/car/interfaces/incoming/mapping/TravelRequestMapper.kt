@@ -1,10 +1,10 @@
-package com.kmacedo.car.interfaces.mapping
+package com.kmacedo.car.interfaces.incoming.mapping
 
 import com.kmacedo.car.domain.PassengerRepository
 import com.kmacedo.car.domain.TravelRequest
 import com.kmacedo.car.domain.TravelRequestInput
 import com.kmacedo.car.domain.TravelRequestOutput
-import com.kmacedo.car.interfaces.PassengerAPI
+import com.kmacedo.car.interfaces.incoming.PassengerAPI
 import org.springframework.hateoas.EntityModel
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder
 import org.springframework.http.HttpStatus
@@ -41,4 +41,6 @@ class TravelRequestMapper(val passengerRepository: PassengerRepository) {
 
         return EntityModel.of(output, passengerLink)
     }
+
+    fun buildOutputModel(requests: List<TravelRequest>) = requests.map { buildOutputModel(it, map(it)) }
 }
