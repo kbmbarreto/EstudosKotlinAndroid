@@ -27,6 +27,8 @@ dependencies {
 // https://mvnrepository.com/artifact/org.springframework.hateoas/spring-hateoas
 	implementation("org.springframework.hateoas:spring-hateoas:1.4.1")
 	implementation("com.jayway.jsonpath:json-path")
+	// https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+	testImplementation("io.rest-assured:rest-assured:4.5.1")
 
 }
 
