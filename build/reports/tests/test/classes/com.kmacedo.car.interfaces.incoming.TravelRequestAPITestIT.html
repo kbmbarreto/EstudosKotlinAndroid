@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.kmacedo.car.interfaces.incoming.TravelRequestAPITestIT</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.kmacedo.car.interfaces.incoming.TravelRequestAPITestIT</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.kmacedo.car.interfaces.incoming.html">com.kmacedo.car.interfaces.incoming</a> &gt; TravelRequestAPITestIT</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.626s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testFindNearbyTravelRequests()"></a>
+<h3 class="failures">testFindNearbyTravelRequests()</h3>
+<span class="code">
+<pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;500&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
+	at com.kmacedo.car.interfaces.incoming.TravelRequestAPITestIT.testFindNearbyTravelRequests(TravelRequestAPITestIT.kt:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">testFindNearbyTravelRequests()</td>
+<td class="failures">1.626s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2022-03-25 01:17:51.000  INFO 34609 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kmacedo.car.interfaces.incoming.TravelRequestAPITestIT], using SpringBootContextLoader
+2022-03-25 01:17:51.001  INFO 34609 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.kmacedo.car.interfaces.incoming.TravelRequestAPITestIT]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-03-25 01:17:51.001  INFO 34609 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kmacedo.car.interfaces.incoming.TravelRequestAPITestIT]: TravelRequestAPITestIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-03-25 01:17:51.013  INFO 34609 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kmacedo.car.CarApplication for test class com.kmacedo.car.interfaces.incoming.TravelRequestAPITestIT
+2022-03-25 01:17:51.014  INFO 34609 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-03-25 01:17:51.015  INFO 34609 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6edaed55, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4bfc53cb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@48267333, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5744b55, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3cfdaeeb, org.springframework.test.context.transaction.TransactionalTestExecutionListener@15b6d0b4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6ef296da, org.springframework.test.context.event.EventPublishingTestExecutionListener@49fb56b2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@18202390, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3b306350, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@418e66aa, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5253f6ef, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4b766396, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@73e4a34b, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener@41ed30ab]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.0)
+
+2022-03-25 01:17:51.041  INFO 34609 --- [    Test worker] c.k.c.i.incoming.TravelRequestAPITestIT  : Starting TravelRequestAPITestIT using Java 15.0.2 on MacBook-Pro-de-Kleber.local with PID 34609 (started by cskmacedo in /Users/cskmacedo/Documents/Sistemas/car)
+2022-03-25 01:17:51.041  INFO 34609 --- [    Test worker] c.k.c.i.incoming.TravelRequestAPITestIT  : The following profiles are active: test
+2022-03-25 01:17:51.177  INFO 34609 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-03-25 01:17:51.187  INFO 34609 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2022-03-25 01:17:51.363  INFO 34609 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-03-25 01:17:51.372  INFO 34609 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-25 01:17:51.372  INFO 34609 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-03-25 01:17:51.469  INFO 34609 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-25 01:17:51.470  INFO 34609 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 425 ms
+2022-03-25 01:17:51.583  INFO 34609 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-25 01:17:51.592  INFO 34609 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-25 01:17:51.594 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -&gt; org.hibernate.type.BooleanType@7ff396fd
+2022-03-25 01:17:51.594 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -&gt; org.hibernate.type.BooleanType@7ff396fd
+2022-03-25 01:17:51.595 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -&gt; org.hibernate.type.BooleanType@7ff396fd
+2022-03-25 01:17:51.595 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -&gt; org.hibernate.type.NumericBooleanType@3270769e
+2022-03-25 01:17:51.595 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -&gt; org.hibernate.type.TrueFalseType@1023352b
+2022-03-25 01:17:51.595 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -&gt; org.hibernate.type.YesNoType@7509332a
+2022-03-25 01:17:51.595 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -&gt; org.hibernate.type.ByteType@b64e4f0
+2022-03-25 01:17:51.596 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -&gt; org.hibernate.type.ByteType@b64e4f0
+2022-03-25 01:17:51.596 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -&gt; org.hibernate.type.ByteType@b64e4f0
+2022-03-25 01:17:51.596 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -&gt; org.hibernate.type.CharacterType@31846416
+2022-03-25 01:17:51.596 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -&gt; org.hibernate.type.CharacterType@31846416
+2022-03-25 01:17:51.596 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -&gt; org.hibernate.type.CharacterType@31846416
+2022-03-25 01:17:51.596 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -&gt; org.hibernate.type.ShortType@78a1962e
+2022-03-25 01:17:51.597 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -&gt; org.hibernate.type.ShortType@78a1962e
+2022-03-25 01:17:51.597 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -&gt; org.hibernate.type.ShortType@78a1962e
+2022-03-25 01:17:51.597 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -&gt; org.hibernate.type.IntegerType@ce200c9
+2022-03-25 01:17:51.597 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -&gt; org.hibernate.type.IntegerType@ce200c9
+2022-03-25 01:17:51.597 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -&gt; org.hibernate.type.IntegerType@ce200c9
+2022-03-25 01:17:51.597 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -&gt; org.hibernate.type.LongType@670456b
+2022-03-25 01:17:51.598 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -&gt; org.hibernate.type.LongType@670456b
+2022-03-25 01:17:51.598 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -&gt; org.hibernate.type.LongType@670456b
+2022-03-25 01:17:51.598 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -&gt; org.hibernate.type.FloatType@218e2ae0
+2022-03-25 01:17:51.598 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -&gt; org.hibernate.type.FloatType@218e2ae0
+2022-03-25 01:17:51.598 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -&gt; org.hibernate.type.FloatType@218e2ae0
+2022-03-25 01:17:51.598 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -&gt; org.hibernate.type.DoubleType@dd74813
+2022-03-25 01:17:51.599 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -&gt; org.hibernate.type.DoubleType@dd74813
+2022-03-25 01:17:51.599 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -&gt; org.hibernate.type.DoubleType@dd74813
+2022-03-25 01:17:51.599 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -&gt; org.hibernate.type.BigDecimalType@75233214
+2022-03-25 01:17:51.599 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -&gt; org.hibernate.type.BigDecimalType@75233214
+2022-03-25 01:17:51.599 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -&gt; org.hibernate.type.BigIntegerType@4200994c
+2022-03-25 01:17:51.599 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -&gt; org.hibernate.type.BigIntegerType@4200994c
+2022-03-25 01:17:51.599 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -&gt; org.hibernate.type.StringType@18aefd2a
+2022-03-25 01:17:51.600 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -&gt; org.hibernate.type.StringType@18aefd2a
+2022-03-25 01:17:51.600 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -&gt; org.hibernate.type.StringNVarcharType@3f59c2f4
+2022-03-25 01:17:51.600 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -&gt; org.hibernate.type.CharacterNCharType@a3e61b3
+2022-03-25 01:17:51.600 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -&gt; org.hibernate.type.UrlType@572970ab
+2022-03-25 01:17:51.600 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -&gt; org.hibernate.type.UrlType@572970ab
+2022-03-25 01:17:51.600 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -&gt; org.hibernate.type.DurationType@18fdcb71
+2022-03-25 01:17:51.601 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -&gt; org.hibernate.type.DurationType@18fdcb71
+2022-03-25 01:17:51.601 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -&gt; org.hibernate.type.InstantType@1fe2b234
+2022-03-25 01:17:51.601 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -&gt; org.hibernate.type.InstantType@1fe2b234
+2022-03-25 01:17:51.601 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -&gt; org.hibernate.type.LocalDateTimeType@2cd77fac
+2022-03-25 01:17:51.601 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -&gt; org.hibernate.type.LocalDateTimeType@2cd77fac
+2022-03-25 01:17:51.601 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -&gt; org.hibernate.type.LocalDateType@48053d6c
+2022-03-25 01:17:51.601 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -&gt; org.hibernate.type.LocalDateType@48053d6c
+2022-03-25 01:17:51.601 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -&gt; org.hibernate.type.LocalTimeType@c66bcb
+2022-03-25 01:17:51.602 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -&gt; org.hibernate.type.LocalTimeType@c66bcb
+2022-03-25 01:17:51.602 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -&gt; org.hibernate.type.OffsetDateTimeType@386a93f5
+2022-03-25 01:17:51.602 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -&gt; org.hibernate.type.OffsetDateTimeType@386a93f5
+2022-03-25 01:17:51.602 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -&gt; org.hibernate.type.OffsetTimeType@141f52da
+2022-03-25 01:17:51.602 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -&gt; org.hibernate.type.OffsetTimeType@141f52da
+2022-03-25 01:17:51.602 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -&gt; org.hibernate.type.ZonedDateTimeType@76709b9d
+2022-03-25 01:17:51.603 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -&gt; org.hibernate.type.ZonedDateTimeType@76709b9d
+2022-03-25 01:17:51.603 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -&gt; org.hibernate.type.DateType@42e320bc
+2022-03-25 01:17:51.603 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -&gt; org.hibernate.type.DateType@42e320bc
+2022-03-25 01:17:51.603 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -&gt; org.hibernate.type.TimeType@648e2923
+2022-03-25 01:17:51.603 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -&gt; org.hibernate.type.TimeType@648e2923
+2022-03-25 01:17:51.603 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -&gt; org.hibernate.type.TimestampType@5fd5d80b
+2022-03-25 01:17:51.604 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -&gt; org.hibernate.type.TimestampType@5fd5d80b
+2022-03-25 01:17:51.604 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -&gt; org.hibernate.type.TimestampType@5fd5d80b
+2022-03-25 01:17:51.604 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -&gt; org.hibernate.type.DbTimestampType@4bb7bb4f
+2022-03-25 01:17:51.604 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -&gt; org.hibernate.type.CalendarType@540db194
+2022-03-25 01:17:51.604 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -&gt; org.hibernate.type.CalendarType@540db194
+2022-03-25 01:17:51.604 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -&gt; org.hibernate.type.CalendarType@540db194
+2022-03-25 01:17:51.605 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -&gt; org.hibernate.type.CalendarDateType@29fd11a4
+2022-03-25 01:17:51.605 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -&gt; org.hibernate.type.CalendarTimeType@54e90a0a
+2022-03-25 01:17:51.605 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -&gt; org.hibernate.type.LocaleType@5f9a1fa8
+2022-03-25 01:17:51.605 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -&gt; org.hibernate.type.LocaleType@5f9a1fa8
+2022-03-25 01:17:51.605 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -&gt; org.hibernate.type.CurrencyType@7c927475
+2022-03-25 01:17:51.605 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -&gt; org.hibernate.type.CurrencyType@7c927475
+2022-03-25 01:17:51.606 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -&gt; org.hibernate.type.TimeZoneType@56febc7d
+2022-03-25 01:17:51.606 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -&gt; org.hibernate.type.TimeZoneType@56febc7d
+2022-03-25 01:17:51.606 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -&gt; org.hibernate.type.ClassType@b446046
+2022-03-25 01:17:51.606 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -&gt; org.hibernate.type.ClassType@b446046
+2022-03-25 01:17:51.606 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -&gt; org.hibernate.type.UUIDBinaryType@ab96ec0
+2022-03-25 01:17:51.606 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -&gt; org.hibernate.type.UUIDBinaryType@ab96ec0
+2022-03-25 01:17:51.606 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -&gt; org.hibernate.type.UUIDCharType@1230522c
+2022-03-25 01:17:51.606 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -&gt; org.hibernate.type.BinaryType@5c67c01
+2022-03-25 01:17:51.606 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -&gt; org.hibernate.type.BinaryType@5c67c01
+2022-03-25 01:17:51.606 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -&gt; org.hibernate.type.BinaryType@5c67c01
+2022-03-25 01:17:51.607 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -&gt; org.hibernate.type.WrapperBinaryType@70b9a7fc
+2022-03-25 01:17:51.607 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -&gt; org.hibernate.type.WrapperBinaryType@70b9a7fc
+2022-03-25 01:17:51.607 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -&gt; org.hibernate.type.WrapperBinaryType@70b9a7fc
+2022-03-25 01:17:51.607 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -&gt; org.hibernate.type.RowVersionType@224c5e88
+2022-03-25 01:17:51.607 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -&gt; org.hibernate.type.ImageType@11129d02
+2022-03-25 01:17:51.607 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -&gt; org.hibernate.type.CharArrayType@385486ba
+2022-03-25 01:17:51.608 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -&gt; org.hibernate.type.CharArrayType@385486ba
+2022-03-25 01:17:51.608 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -&gt; org.hibernate.type.CharArrayType@385486ba
+2022-03-25 01:17:51.608 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -&gt; org.hibernate.type.CharacterArrayType@619176b2
+2022-03-25 01:17:51.608 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -&gt; org.hibernate.type.CharacterArrayType@619176b2
+2022-03-25 01:17:51.608 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -&gt; org.hibernate.type.CharacterArrayType@619176b2
+2022-03-25 01:17:51.608 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -&gt; org.hibernate.type.TextType@b6e9a01
+2022-03-25 01:17:51.608 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -&gt; org.hibernate.type.NTextType@5fe9daad
+2022-03-25 01:17:51.608 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -&gt; org.hibernate.type.BlobType@5f65e050
+2022-03-25 01:17:51.608 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -&gt; org.hibernate.type.BlobType@5f65e050
+2022-03-25 01:17:51.608 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -&gt; org.hibernate.type.MaterializedBlobType@74d21b3d
+2022-03-25 01:17:51.609 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -&gt; org.hibernate.type.ClobType@4f5ccefa
+2022-03-25 01:17:51.609 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -&gt; org.hibernate.type.ClobType@4f5ccefa
+2022-03-25 01:17:51.609 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -&gt; org.hibernate.type.NClobType@70462709
+2022-03-25 01:17:51.609 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -&gt; org.hibernate.type.NClobType@70462709
+2022-03-25 01:17:51.609 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -&gt; org.hibernate.type.MaterializedClobType@1c5fc938
+2022-03-25 01:17:51.609 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -&gt; org.hibernate.type.MaterializedNClobType@4aff10a
+2022-03-25 01:17:51.609 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -&gt; org.hibernate.type.SerializableType@7851f0b2
+2022-03-25 01:17:51.609 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -&gt; org.hibernate.type.ObjectType@64228cc0
+2022-03-25 01:17:51.609 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -&gt; org.hibernate.type.ObjectType@64228cc0
+2022-03-25 01:17:51.609 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -&gt; org.hibernate.type.AdaptedImmutableType@4644650a
+2022-03-25 01:17:51.610 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -&gt; org.hibernate.type.AdaptedImmutableType@28b7a44d
+2022-03-25 01:17:51.610 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -&gt; org.hibernate.type.AdaptedImmutableType@17d6ebaf
+2022-03-25 01:17:51.610 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -&gt; org.hibernate.type.AdaptedImmutableType@43ba828d
+2022-03-25 01:17:51.610 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -&gt; org.hibernate.type.AdaptedImmutableType@26b3c3c5
+2022-03-25 01:17:51.610 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -&gt; org.hibernate.type.AdaptedImmutableType@33b38e92
+2022-03-25 01:17:51.610 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -&gt; org.hibernate.type.AdaptedImmutableType@139890d8
+2022-03-25 01:17:51.610 DEBUG 34609 --- [         task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -&gt; org.hibernate.type.AdaptedImmutableType@421c6cc
+2022-03-25 01:17:51.612  INFO 34609 --- [         task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-03-25 01:17:51.612  WARN 34609 --- [         task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-03-25 01:17:51.681  INFO 34609 --- [         task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-03-25 01:17:51.681  INFO 34609 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-03-25 01:17:51.686 DEBUG 34609 --- [         task-1] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4e5c8a6b] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3b1506af]
+2022-03-25 01:17:51.691 DEBUG 34609 --- [         task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.kmacedo.car.domain.TravelRequestStatus
+2022-03-25 01:17:51.692 DEBUG 34609 --- [         task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.kmacedo.car.domain.TravelRequestStatus
+2022-03-25 01:17:51.693 DEBUG 34609 --- [         task-1] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4e5c8a6b] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@5ec6ccf6]
+2022-03-25 01:17:51.694 DEBUG 34609 --- [         task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.kmacedo.car.domain.TravelRequestStatus
+2022-03-25 01:17:51.694 DEBUG 34609 --- [         task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.kmacedo.car.domain.TravelRequestStatus
+2022-03-25 01:17:51.694 DEBUG 34609 --- [         task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.kmacedo.car.domain.TravelRequestStatus
+2022-03-25 01:17:51.694 DEBUG 34609 --- [         task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.kmacedo.car.domain.TravelRequestStatus
+2022-03-25 01:17:51.697 DEBUG 34609 --- [         task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.kmacedo.car.domain.TravelRequestStatus
+2022-03-25 01:17:51.697 DEBUG 34609 --- [         task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.kmacedo.car.domain.TravelRequestStatus
+2022-03-25 01:17:51.697 DEBUG 34609 --- [         task-1] org.hibernate.type.EnumType              : Using ORDINAL-based conversion for Enum com.kmacedo.car.domain.TravelRequestStatus
+2022-03-25 01:17:51.722  INFO 34609 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-25 01:17:51.722 TRACE 34609 --- [         task-1] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@5ec6ccf6] for TypeConfiguration
+2022-03-25 01:17:51.722  INFO 34609 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-25 01:17:51.861  INFO 34609 --- [    Test worker] wiremock.org.eclipse.jetty.util.log      : Logging initialized @4718ms to wiremock.org.eclipse.jetty.util.log.Slf4jLog
+2022-03-25 01:17:51.942  INFO 34609 --- [    Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.4.20.v20190813; built: 2019-08-13T21:28:18.144Z; git: 84700530e645e812b336747464d6fbbf370c9a20; jvm 15.0.2+7-27
+2022-03-25 01:17:51.954  INFO 34609 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@6dfa7aea{/__admin,null,AVAILABLE}
+2022-03-25 01:17:51.956  INFO 34609 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@185421de{/,null,AVAILABLE}
+2022-03-25 01:17:51.962  INFO 34609 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Started NetworkTrafficServerConnector@5e2cc776{HTTP/1.1,[http/1.1]}{0.0.0.0:10277}
+2022-03-25 01:17:51.963  INFO 34609 --- [    Test worker] w.org.eclipse.jetty.server.Server        : Started @4820ms
+2022-03-25 01:17:51.991  WARN 34609 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-25 01:17:52.305  INFO 34609 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 50298 (http) with context path ''
+2022-03-25 01:17:52.306  INFO 34609 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2022-03-25 01:17:52.417  INFO 34609 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2022-03-25 01:17:52.419  INFO 34609 --- [    Test worker] c.k.c.i.incoming.TravelRequestAPITestIT  : Started TravelRequestAPITestIT in 1.403 seconds (JVM running for 5.277)
+2022-03-25 01:17:53.009  INFO 34609 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-25 01:17:53.009  INFO 34609 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-25 01:17:53.010  INFO 34609 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-25 01:17:53.116 DEBUG 34609 --- [o-auto-1-exec-1] org.hibernate.SQL                        : insert into passenger (name) values (?)
+2022-03-25 01:17:53.119 TRACE 34609 --- [o-auto-1-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Alexandre Saudate]
+2022-03-25 01:17:53.558 DEBUG 34609 --- [o-auto-1-exec-2] org.hibernate.SQL                        : select passenger0_.id as id1_1_0_, passenger0_.name as name2_1_0_ from passenger passenger0_ where passenger0_.id=?
+2022-03-25 01:17:53.559 TRACE 34609 --- [o-auto-1-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [6]
+2022-03-25 01:17:53.564 TRACE 34609 --- [o-auto-1-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_1_0_] : [VARCHAR]) - [Alexandre Saudate]
+2022-03-25 01:17:53.579 DEBUG 34609 --- [o-auto-1-exec-2] org.hibernate.SQL                        : insert into travel_request (creation_date, destination, origin, passenger_id, status) values (?, ?, ?, ?, ?)
+2022-03-25 01:17:53.580 TRACE 34609 --- [o-auto-1-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [TIMESTAMP] - [2022-03-25T01:17:53.572338]
+2022-03-25 01:17:53.580 TRACE 34609 --- [o-auto-1-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Avenida Ipiranga, 100]
+2022-03-25 01:17:53.581 TRACE 34609 --- [o-auto-1-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Avenida Paulista, 1000]
+2022-03-25 01:17:53.581 TRACE 34609 --- [o-auto-1-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [6]
+2022-03-25 01:17:53.581 TRACE 34609 --- [o-auto-1-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [INTEGER] - [0]
+2022-03-25 01:17:53.902 DEBUG 34609 --- [o-auto-1-exec-4] org.hibernate.SQL                        : select travelrequ0_.id as id1_2_, travelrequ0_.creation_date as creation2_2_, travelrequ0_.destination as destinat3_2_, travelrequ0_.origin as origin4_2_, travelrequ0_.passenger_id as passenge6_2_, travelrequ0_.status as status5_2_ from travel_request travelrequ0_ where travelrequ0_.status=?
+2022-03-25 01:17:53.903 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [0]
+2022-03-25 01:17:53.905 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_2_] : [BIGINT]) - [6]
+2022-03-25 01:17:53.906 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([creation2_2_] : [TIMESTAMP]) - [2022-03-24T00:06:47]
+2022-03-25 01:17:53.906 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([destinat3_2_] : [VARCHAR]) - [Hospital Hmut]
+2022-03-25 01:17:53.906 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([origin4_2_] : [VARCHAR]) - [Rua Urbano Figueira, 89]
+2022-03-25 01:17:53.906 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([passenge6_2_] : [BIGINT]) - [1]
+2022-03-25 01:17:53.907 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([status5_2_] : [INTEGER]) - [CREATED]
+2022-03-25 01:17:53.907 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_2_] : [BIGINT]) - [7]
+2022-03-25 01:17:53.907 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([creation2_2_] : [TIMESTAMP]) - [2022-03-24T00:07:28]
+2022-03-25 01:17:53.907 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([destinat3_2_] : [VARCHAR]) - [Rua Doutor Urbano Figueira, 14]
+2022-03-25 01:17:53.907 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([origin4_2_] : [VARCHAR]) - [Rua Doutor Urbano Figueira, 89]
+2022-03-25 01:17:53.907 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([passenge6_2_] : [BIGINT]) - [1]
+2022-03-25 01:17:53.907 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([status5_2_] : [INTEGER]) - [CREATED]
+2022-03-25 01:17:53.908 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_2_] : [BIGINT]) - [8]
+2022-03-25 01:17:53.908 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([creation2_2_] : [TIMESTAMP]) - [2022-03-24T23:58:45]
+2022-03-25 01:17:53.908 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([destinat3_2_] : [VARCHAR]) - [Avenida Ipiranga, 100]
+2022-03-25 01:17:53.908 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([origin4_2_] : [VARCHAR]) - [Avenida Paulista, 1000]
+2022-03-25 01:17:53.908 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([passenge6_2_] : [BIGINT]) - [4]
+2022-03-25 01:17:53.909 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([status5_2_] : [INTEGER]) - [CREATED]
+2022-03-25 01:17:53.909 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_2_] : [BIGINT]) - [9]
+2022-03-25 01:17:53.909 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([creation2_2_] : [TIMESTAMP]) - [2022-03-25T01:17:54]
+2022-03-25 01:17:53.909 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([destinat3_2_] : [VARCHAR]) - [Avenida Ipiranga, 100]
+2022-03-25 01:17:53.909 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([origin4_2_] : [VARCHAR]) - [Avenida Paulista, 1000]
+2022-03-25 01:17:53.909 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([passenge6_2_] : [BIGINT]) - [6]
+2022-03-25 01:17:53.910 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([status5_2_] : [INTEGER]) - [CREATED]
+2022-03-25 01:17:53.910 DEBUG 34609 --- [o-auto-1-exec-4] org.hibernate.SQL                        : select passenger0_.id as id1_1_0_, passenger0_.name as name2_1_0_ from passenger passenger0_ where passenger0_.id=?
+2022-03-25 01:17:53.910 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2022-03-25 01:17:53.911 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_1_0_] : [VARCHAR]) - [Lascuriano da Sucar]
+2022-03-25 01:17:53.912 DEBUG 34609 --- [o-auto-1-exec-4] org.hibernate.SQL                        : select passenger0_.id as id1_1_0_, passenger0_.name as name2_1_0_ from passenger passenger0_ where passenger0_.id=?
+2022-03-25 01:17:53.912 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4]
+2022-03-25 01:17:53.913 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_1_0_] : [VARCHAR]) - [Alexandre Saudate]
+2022-03-25 01:17:53.914 DEBUG 34609 --- [o-auto-1-exec-4] org.hibernate.SQL                        : select passenger0_.id as id1_1_0_, passenger0_.name as name2_1_0_ from passenger passenger0_ where passenger0_.id=?
+2022-03-25 01:17:53.914 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [6]
+2022-03-25 01:17:53.915 TRACE 34609 --- [o-auto-1-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_1_0_] : [VARCHAR]) - [Alexandre Saudate]
+2022-03-25 01:17:53.971  INFO 34609 --- [qtp978040992-41] w.o.e.j.s.handler.ContextHandler.ROOT    : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.StubRequestHandler. Normalized mapped under returned 'null'
+2022-03-25 01:17:53.999 ERROR 34609 --- [qtp978040992-41] WireMock                                 : 
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+GET                                                        | GET
+/maps/api/directions/json                                  | /maps/api/directions/json?origin=Avenida%20Paulista,%2090
+                                                           | 0&amp;destination=Rua%20Urbano%20Figueira,%2089&amp;key=APIKEY
+                                                           |
+Query: origin = Avenida Paulista, 900                      | origin: Avenida Paulista, 900
+Query: destination = Avenida Paulista, 1000                | destination: Rua Urbano Figueira, 89                &lt;&lt;&lt;&lt;&lt; Query does not match
+Query: key = APIKEY                                        | key: APIKEY
+                                                           |
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+2022-03-25 01:17:54.001  INFO 34609 --- [qtp978040992-41] WireMock                                 : Request received:
+127.0.0.1 - GET /maps/api/directions/json?origin=Avenida%20Paulista,%20900&amp;destination=Rua%20Urbano%20Figueira,%2089&amp;key=APIKEY
+
+Accept: [text/plain, application/json, application/*+json, */*]
+User-Agent: [Java/15.0.2]
+Connection: [keep-alive]
+Host: [localhost:10277]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2022-03-25 01:17:54.013  INFO 34609 --- [qtp978040992-41] w.o.e.j.s.h.ContextHandler.__admin       : RequestHandlerClass from context returned com.github.tomakehurst.wiremock.http.AdminRequestHandler. Normalized mapped under returned 'null'
+2022-03-25 01:17:54.013  INFO 34609 --- [qtp978040992-41] WireMock                                 : Admin request received:
+127.0.0.1 - GET /not-matched?origin=Avenida Paulista, 900&amp;destination=Rua Urbano Figueira, 89&amp;key=APIKEY
+
+Accept: [text/plain, application/json, application/*+json, */*]
+User-Agent: [Java/15.0.2]
+Connection: [keep-alive]
+Host: [localhost:10277]
+
+
+2022-03-25 01:17:54.028 ERROR 34609 --- [o-auto-1-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [
+                                               Request was not matched
+                                               =======================
+
+--------------------------------------------------------... (1472 bytes)]] with root cause
+
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 Not Found: [
+                                               Request was not matched
+                                               =======================
+
+--------------------------------------------------------... (1472 bytes)]
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:125) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:818) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:710) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:333) ~[spring-web-5.3.1.jar:5.3.1]
+	at com.kmacedo.car.interfaces.outcoming.GMapsService.getDistanceBetweenAddresses(GMapsService.kt:22) ~[main/:na]
+	at com.kmacedo.car.domain.TravelService.listNearbyTravelRequests(TravelService.kt:20) ~[main/:na]
+	at com.kmacedo.car.interfaces.incoming.TravelRequestAPI.listNearbyRequests(TravelRequestAPI.kt:39) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2022-03-25 01:17:54.056  INFO 34609 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Stopped NetworkTrafficServerConnector@5e2cc776{HTTP/1.1,[http/1.1]}{0.0.0.0:10277}
+2022-03-25 01:17:54.057  INFO 34609 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@185421de{/,null,UNAVAILABLE}
+2022-03-25 01:17:54.057  INFO 34609 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Stopped w.o.e.j.s.ServletContextHandler@6dfa7aea{/__admin,null,UNAVAILABLE}
+2022-03-25 01:17:54.057  INFO 34609 --- [    Test worker] w.org.eclipse.jetty.server.Server        : jetty-9.4.20.v20190813; built: 2019-08-13T21:28:18.144Z; git: 84700530e645e812b336747464d6fbbf370c9a20; jvm 15.0.2+7-27
+2022-03-25 01:17:54.059  INFO 34609 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@6dfa7aea{/__admin,null,AVAILABLE}
+2022-03-25 01:17:54.059  INFO 34609 --- [    Test worker] w.o.e.j.server.handler.ContextHandler    : Started w.o.e.j.s.ServletContextHandler@185421de{/,null,AVAILABLE}
+2022-03-25 01:17:54.060  INFO 34609 --- [    Test worker] w.o.e.jetty.server.AbstractConnector     : Started NetworkTrafficServerConnector@5e2cc776{HTTP/1.1,[http/1.1]}{0.0.0.0:10277}
+2022-03-25 01:17:54.060  INFO 34609 --- [    Test worker] w.org.eclipse.jetty.server.Server        : Started @6917ms
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.6.1</a> at 25 de mar. de 2022 01:17:55</p>
+</div>
+</div>
+</body>
+</html>

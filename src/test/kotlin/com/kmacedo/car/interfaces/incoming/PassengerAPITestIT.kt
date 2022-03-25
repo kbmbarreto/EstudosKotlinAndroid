@@ -6,7 +6,9 @@ import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.web.server.LocalServerPort
 
-//Teste de integração
+import io.restassured.RestAssured.given
+import org.hamcrest.Matchers.equalTo
+import org.hamcrest.Matchers.notNullValue
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class PassengerAPITestIT {
@@ -15,14 +17,24 @@ class PassengerAPITestIT {
     private var port: Int = 0
 
     @BeforeEach
-    fun setup(){
+    fun setup() {
         RestAssured.port = port
     }
 
     @Test
-    fun testCreatePassenger(){
+    fun testCreatePassenger() {
         val createPassengerJSON = """
             {"name":"Kleber Barreto"}
-            """.trimIndent()
+        """.trimIndent()
+
+        given()
+            .contentType(io.restassured.http.ContentType.JSON)
+            .body(createPassengerJSON)
+            .post("/passengers")
+            .then()
+            .statusCode(200)
+            .body("id", notNullValue())
+            .body("name", equalTo("Kleber Barreto"))
+
     }
 }

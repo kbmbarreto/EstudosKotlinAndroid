@@ -1,14 +1,14 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-	id("org.springframework.boot") version "2.6.4"
-	id("io.spring.dependency-management") version "1.0.11.RELEASE"
-	kotlin("jvm") version "1.6.10"
-	kotlin("plugin.spring") version "1.6.10"
-	kotlin("plugin.jpa") version "1.6.10"
+	id("org.springframework.boot") version "2.4.0"
+	id("io.spring.dependency-management") version "1.0.10.RELEASE"
+	kotlin("jvm") version "1.4.10"
+	kotlin("plugin.spring") version "1.4.10"
+	kotlin("plugin.jpa") version "1.4.10"
 }
 
-group = "com.kmacedo"
+group = "app.car"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
@@ -19,17 +19,20 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.hateoas:spring-hateoas")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+	implementation("com.jayway.jsonpath:json-path")
+	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	runtimeOnly("mysql:mysql-connector-java")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
-// https://mvnrepository.com/artifact/org.springframework.hateoas/spring-hateoas
-	implementation("org.springframework.hateoas:spring-hateoas:1.4.1")
-	implementation("com.jayway.jsonpath:json-path")
-	// https://mvnrepository.com/artifact/io.rest-assured/rest-assured
-	testImplementation("io.rest-assured:rest-assured:4.5.1")
+	testImplementation("io.rest-assured:spring-mock-mvc:4.3.2")
+	testImplementation("org.springframework.cloud:spring-cloud-contract-wiremock:2.2.5.RELEASE")
+}
 
+tasks.withType<Test> {
+	useJUnitPlatform()
 }
 
 tasks.withType<KotlinCompile> {
@@ -37,8 +40,4 @@ tasks.withType<KotlinCompile> {
 		freeCompilerArgs = listOf("-Xjsr305=strict")
 		jvmTarget = "11"
 	}
-}
-
-tasks.withType<Test> {
-	useJUnitPlatform()
 }

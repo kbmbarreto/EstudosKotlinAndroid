@@ -1,19 +1,22 @@
 package com.kmacedo.car.interfaces.incoming
 
-import com.kmacedo.car.domain.TravelRequest
-import com.kmacedo.car.domain.TravelRequestInput
-import com.kmacedo.car.domain.TravelRequestOutput
+import com.kmacedo.car.domain.TravelRequestStatus
 import com.kmacedo.car.domain.TravelService
 import com.kmacedo.car.interfaces.incoming.mapping.TravelRequestMapper
 import org.springframework.hateoas.EntityModel
 import org.springframework.http.MediaType
 import org.springframework.stereotype.Service
-import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
+import java.time.LocalDateTime
+import org.springframework.web.bind.annotation.RequestParam
+
+import org.springframework.web.bind.annotation.GetMapping
+
+
+
 
 @Service
 @RestController
@@ -26,16 +29,29 @@ class TravelRequestAPI(
     @PostMapping
     fun makeTravelRequest(@RequestBody travelRequestInput: TravelRequestInput)
         : EntityModel<TravelRequestOutput> {
-
         val travelRequest = travelService.saveTravelRequest(mapper.map(travelRequestInput))
         val output = mapper.map(travelRequest)
         return mapper.buildOutputModel(travelRequest, output)
     }
 
     @GetMapping("/nearby")
-    fun listNearbyRequests(@RequestParam currentAddress: String):
-            List<EntityModel<TravelRequestOutput>> {
-                val requests = travelService.listNearbyTravelRequests(currentAddress)
+    fun listNearbyRequests(@RequestParam currentAddress: String): List<EntityModel<TravelRequestOutput>> {
+        val requests = travelService.listNearbyTravelRequests(currentAddress)
         return mapper.buildOutputModel(requests)
     }
 }
+
+
+data class TravelRequestInput(
+    val passengerId: Long,
+    val origin: String,
+    val destination: String
+)
+
+data class TravelRequestOutput(
+    val id: Long,
+    val origin: String,
+    val destination: String,
+    val status: TravelRequestStatus,
+    val creationDate: LocalDateTime
+)
