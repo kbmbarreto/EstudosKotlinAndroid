@@ -7,38 +7,38 @@ import javax.persistence.*
 @Entity
 data class Driver(
 
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        var id: Long? = null,
-        val name: String,
-        val birthDate: LocalDate
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    var id: Long? = null,
+    val name: String,
+    val birthDate: LocalDate
 )
 
 data class PatchDriver(
-        val name: String?,
-        val birthDate: LocalDate?
+    val name: String?,
+    val birthDate: LocalDate?
 )
 
 @Entity
 data class Passenger(
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        var id: Long? = null,
-        val name: String
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    var id: Long? = null,
+    val name: String
 )
 
 data class PatchPassenger(
-        val name: String?
+    val name: String?
 )
 
 @Entity
 data class TravelRequest(
     @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        var id: Long? = null,
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    var id: Long? = null,
 
     @ManyToOne
-        val passenger: Passenger,
+    val passenger: Passenger,
     val origin: String,
     val destination: String,
     val status: TravelRequestStatus = TravelRequestStatus.CREATED,
@@ -46,13 +46,13 @@ data class TravelRequest(
 )
 
 data class TravelRequestInput(
-        val passengerId: Long,
-        val origin: String,
-        val destination: String
+    val passengerId: Long,
+    val origin: String,
+    val destination: String
 )
 
-enum class TravelRequestStatus{
-        CREATED, ACCEPTED, REFUSED
+enum class TravelRequestStatus {
+    CREATED, ACCEPTED, REFUSED
 }
 
 data class TravelRequestOutput(
@@ -61,4 +61,19 @@ data class TravelRequestOutput(
     val destination: String,
     val status: TravelRequestStatus,
     val creationDate: LocalDateTime
+)
+
+@Entity
+data class User(
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    var id: Long? = null,
+    @Column(unique = true)
+    val username: String,
+    val password: String,
+    val enabled: Boolean = true,
+
+    @ElementCollection
+    val roles: MutableList<String>
+
 )
