@@ -1,6 +1,7 @@
 package com.kmacedo.car.interfaces.incoming
 
 import io.restassured.RestAssured
+import io.restassured.RestAssured.basic
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
@@ -18,7 +19,9 @@ class PassengerAPITestIT {
 
     @BeforeEach
     fun setup() {
-        RestAssured.port = port
+        RestAssured.baseURI = "https://localhost:$port"
+        RestAssured.useRelaxedHTTPSValidation()
+        RestAssured.authentication = basic("admin", "password")
     }
 
     @Test
