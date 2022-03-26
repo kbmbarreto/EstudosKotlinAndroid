@@ -18,72 +18,75 @@ import com.kmacedo.car.domain.User as DomainUser
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(jsr250Enabled = true)
-class SecurityConfig(val datasource: DataSource): WebSecurityConfigurerAdapter() {
+class SecurityConfig(
+    val datasource: DataSource
+) : WebSecurityConfigurerAdapter() {
 
     @Bean
     fun passwordEncoder() = BCryptPasswordEncoder()
 
-    override fun configure(http: HttpSecurity?) {
-        http?.csrf()?.disable()
+    override fun configure(http: HttpSecurity) {
+        http.csrf().disable()
 
-        http?.sessionManagement()
-            ?.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+        http.sessionManagement()
+            .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
 
         http
-            ?.authorizeRequests()
-            ?.anyRequest()
-            ?.authenticated()
-            ?.and()
-            ?.httpBasic()
+            .authorizeRequests()
+            .anyRequest()
+            .authenticated()
+            .and()
+            .httpBasic()
     }
 
-    override fun configure(auth: AuthenticationManagerBuilder?) {
+    override fun configure(auth: AuthenticationManagerBuilder) {
+        /*
+        val password = "{noop}password";
+        val driver = User.builder()
+            .username("driver")
+            .password(password)
+            .roles("DRIVER")
+        val passenger = User.builder()
+            .username("passenger")
+            .password(password)
+            .roles("PASSENGER")
+        val admin = User.builder()
+            .username("admin")
+            .password(password)
+            .roles("ADMIN")
+        auth.inMemoryAuthentication()
+            .withUser(driver)
+            .withUser(passenger)
+            .withUser(admin)
+         */
 
         val queryUsers = "select username, password, enabled from user where username=?"
         val queryRoles = "select u.username, r.roles from user_roles r, user u where r.user_id = u.id and u.username=?"
 
-        auth!!.jdbcAuthentication()
+        auth.jdbcAuthentication()
             .dataSource(datasource)
             .passwordEncoder(passwordEncoder())
             .usersByUsernameQuery(queryUsers)
             .authoritiesByUsernameQuery(queryRoles)
-
-//        val password = "{noop}password";
-//
-//        val driver = User.builder()
-//            .username("driver")
-//            .password(password)
-//            .roles("DRIVER")
-//
-//        val passenger = User.builder()
-//            .username("passenger")
-//            .password(password)
-//            .roles("DRIVER")
-//
-//        val admin = User.builder()
-//            .username("admin")
-//            .password(password)
-//            .roles("ADMIN")
-//
-//        auth?.inMemoryAuthentication()
-//            ?.withUser(driver)
-//            ?.withUser(passenger)
-//            ?.withUser(admin)
     }
+}
 
-    @Configuration
-    class LoadUserConfig(
-        val passwordEncoder: PasswordEncoder,
-        val userRepository: UserRepository
-    ){
-        @PostConstruct
-        fun init(){
-            val admin = DomainUser(
-                username = "admin",
-                password = passwordEncoder.encode("password"),
-                roles = mutableListOf("ROLE_ADMIN")
-            )
+@Configuration
+class LoadUserConfig(
+    val passwordEncoder: PasswordEncoder,
+    val userRepository: UserRepository
+) {
+
+    @PostConstruct
+    fun init() {
+        val admin = DomainUser(
+            username = "admin",
+            password = passwordEncoder.encode("password"),
+            roles = mutableListOf("ROLE_ADMIN")
+        )
+        if(userRepository.findAll().find { user -> user.username == admin.username } == null) {
             userRepository.save(admin)
         }
     }
+
 }

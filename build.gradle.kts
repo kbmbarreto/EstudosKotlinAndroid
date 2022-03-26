@@ -30,6 +30,7 @@ dependencies {
 	testImplementation("io.rest-assured:spring-mock-mvc:4.3.2")
 	testImplementation("org.springframework.cloud:spring-cloud-contract-wiremock:2.2.5.RELEASE")
 	implementation("org.springframework.boot:spring-boot-starter-security")
+	implementation("org.springframework.boot:spring-boot-starter-validation")
 }
 
 tasks.withType<Test> {

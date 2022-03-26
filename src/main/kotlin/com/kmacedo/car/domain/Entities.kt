@@ -1,8 +1,10 @@
 package com.kmacedo.car.domain
 
+import javax.validation.constraints.NotNull
 import java.time.LocalDate
 import java.time.LocalDateTime
 import javax.persistence.*
+import javax.validation.constraints.NotEmpty
 
 @Entity
 data class Driver(
@@ -46,9 +48,12 @@ data class TravelRequest(
 )
 
 data class TravelRequestInput(
-    val passengerId: Long,
-    val origin: String,
-    val destination: String
+    @get:NotNull(message = "O campo passengerId não pode ser nulo")
+    val passengerId: Long?,
+    @get:NotEmpty(message = "O campo origin não pode ser nulo")
+    val origin: String?,
+    @get:NotEmpty(message = "O campo destination não pode ser nulo")
+    val destination: String?
 )
 
 enum class TravelRequestStatus {
