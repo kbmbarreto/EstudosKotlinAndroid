@@ -1,8 +1,10 @@
 package com.kmacedo.car.config
 
 import com.kmacedo.car.domain.UserRepository
+import org.springframework.context.MessageSource
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.context.support.ReloadableResourceBundleMessageSource
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
@@ -11,7 +13,11 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.security.crypto.password.PasswordEncoder
+import org.springframework.stereotype.Component
+import org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver
+import java.util.*
 import javax.annotation.PostConstruct
+import javax.servlet.http.HttpServletRequest
 import javax.sql.DataSource
 import com.kmacedo.car.domain.User as DomainUser
 
@@ -89,4 +95,13 @@ class LoadUserConfig(
         }
     }
 
+}
+
+@Configuration
+class AppConfig{
+
+    @Bean
+    fun messageSource() = ReloadableResourceBundleMessageSource().apply {
+        setBasename("classpath:/i18n/messages")
+    }
 }
