@@ -31,6 +31,8 @@ dependencies {
 	testImplementation("org.springframework.cloud:spring-cloud-contract-wiremock:2.2.5.RELEASE")
 	implementation("org.springframework.boot:spring-boot-starter-security")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
+	implementation("org.springdoc:springdoc-openapi-common:1.6.6")
+	implementation("org.springdoc:springdoc-openapi-ui:1.6.6")
 }
 
 tasks.withType<Test> {

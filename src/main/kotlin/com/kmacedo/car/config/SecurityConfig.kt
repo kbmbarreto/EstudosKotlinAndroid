@@ -1,7 +1,9 @@
 package com.kmacedo.car.config
 
 import com.kmacedo.car.domain.UserRepository
-import org.springframework.context.MessageSource
+import io.swagger.v3.oas.models.OpenAPI
+import io.swagger.v3.oas.models.info.Contact
+import io.swagger.v3.oas.models.info.Info
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.context.support.ReloadableResourceBundleMessageSource
@@ -13,11 +15,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.security.crypto.password.PasswordEncoder
-import org.springframework.stereotype.Component
-import org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver
-import java.util.*
 import javax.annotation.PostConstruct
-import javax.servlet.http.HttpServletRequest
 import javax.sql.DataSource
 import com.kmacedo.car.domain.User as DomainUser
 
@@ -39,6 +37,8 @@ class SecurityConfig(
 
         http
             .authorizeRequests()
+            .antMatchers("/swagger-ui.html", "/swagger-ui/**", "/v3/api-docs/**")
+            .permitAll()
             .anyRequest()
             .authenticated()
             .and()
@@ -46,25 +46,6 @@ class SecurityConfig(
     }
 
     override fun configure(auth: AuthenticationManagerBuilder) {
-        /*
-        val password = "{noop}password";
-        val driver = User.builder()
-            .username("driver")
-            .password(password)
-            .roles("DRIVER")
-        val passenger = User.builder()
-            .username("passenger")
-            .password(password)
-            .roles("PASSENGER")
-        val admin = User.builder()
-            .username("admin")
-            .password(password)
-            .roles("ADMIN")
-        auth.inMemoryAuthentication()
-            .withUser(driver)
-            .withUser(passenger)
-            .withUser(admin)
-         */
 
         val queryUsers = "select username, password, enabled from user where username=?"
         val queryRoles = "select u.username, r.roles from user_roles r, user u where r.user_id = u.id and u.username=?"
@@ -97,11 +78,33 @@ class LoadUserConfig(
 
 }
 
+
 @Configuration
-class AppConfig{
+class AppConfig {
 
     @Bean
     fun messageSource() = ReloadableResourceBundleMessageSource().apply {
         setBasename("classpath:/i18n/messages")
+    }
+}
+
+
+@Configuration
+class OpenAPIConfig {
+
+    @Bean
+    fun openAPIDocumentation(): OpenAPI {
+        return OpenAPI()
+            .info(
+                Info()
+                    .title("C.A.R. API")
+                    .description("API do sistema C.A.R., de facilitação de mobilidade urbana")
+                    .version("v1.0")
+                    .contact(
+                        Contact()
+                            .name("Kleber Barreto de Macedo")
+                            .email("kleber.barreto@msn.com")
+                    )
+            )
     }
 }
