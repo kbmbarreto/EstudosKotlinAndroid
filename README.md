@@ -4,8 +4,7 @@
 
 ## Diretórios e projetos neste repositório:
 
-- **car:** Projeto criado para estudos do livro APIs REST em Kotlin, Casa do Código, Alexandre Saudate, 2021
-<br>
+- **car:** Projeto criado para estudos do livro APIs REST em Kotlin, Casa do Código, Alexandre Saudate, 2021<br>
 - **Desenvolvimento Android 2022** - Projetos desenvolvidos durante o aprendizado no curso de Desenvolvimento Android, Udemy, Marco Aurélio Dias de Oliveira, 2022
 
 ## Links relacionados com o conteúdo deste repositório:
