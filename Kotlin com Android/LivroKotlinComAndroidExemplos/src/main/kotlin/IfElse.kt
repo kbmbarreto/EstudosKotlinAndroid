@@ -22,4 +22,6 @@ fun main() {
     val x = 10
     val y = 5
     val maior = if( x > y) x else y
+
+    println(maior)
 }
