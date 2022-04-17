@@ -3,6 +3,9 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+//Faz o mapeamento dos componentes declarados no xml
+apply plugin: 'kotlin-android-extensions'
+
 android {
     compileSdk 31
 
