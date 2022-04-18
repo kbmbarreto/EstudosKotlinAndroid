@@ -6,11 +6,6 @@ import java.io.ByteArrayOutputStream
 import java.text.NumberFormat
 import java.util.*
 
-/**
- * Created by kassianoresende on 15/02/2018.
- */
-
-
 val produtosGlobal = mutableListOf<Produto>()
 
 

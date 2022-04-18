@@ -4,9 +4,6 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import org.jetbrains.anko.db.*
 
-/**
- * Created by kassianoresende on 12/03/2018.
- */
 
 // Acesso a propriedade pelo contexto
 val Context.database: ListaComprasDatabase

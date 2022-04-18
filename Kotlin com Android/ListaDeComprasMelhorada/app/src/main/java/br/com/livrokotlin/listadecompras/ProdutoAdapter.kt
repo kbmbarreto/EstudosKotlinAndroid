@@ -11,9 +11,6 @@ import android.widget.TextView
 import java.text.NumberFormat
 import java.util.*
 
-/**
- * Created by kassianoresende on 06/02/2018.
- */
 class ProdutoAdapter(contexto: Context) : ArrayAdapter<Produto>(contexto,0) {
 
 
