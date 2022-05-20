@@ -44,4 +44,12 @@ class CustomerService(
         customerRepository.save(customer)
     }
 
+//    MÉTODO PARA APENAS DELETAR
+
+//    fun delete(id: Int) {
+//        val customer = findById(id)
+//
+//        customerRepository.deleteById(id)
+//    }
+
 }
