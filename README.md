@@ -14,4 +14,4 @@
 - [Livro utilizado no projeto CAR](https://www.casadocodigo.com.br/products/livro-apis-rest-kotlin)<br>
 - [Livro utilizado em estudos Android](https://www.casadocodigo.com.br/products/livro-kotlin-android)<br>
 - [Curso Desenvolvimento Android 2022 - Udemy](https://www.udemy.com/course/desenvolvimento-android-do-absoluto-zero-para-iniciantes/)<br>
-- [Curso Kotlin e Spring do Zero ao Avançado - Udemy] (https://www.udemy.com/course/kotlin-spring/)<br>
+- [Curso Kotlin e Spring do Zero ao Avançado - Udemy](https://www.udemy.com/course/kotlin-spring/)<br>
