@@ -54,5 +54,4 @@ class BookController(
         val bookSaved = bookService.findById(id)
         bookService.update(book.toBookModel(bookSaved))
     }
-
 }

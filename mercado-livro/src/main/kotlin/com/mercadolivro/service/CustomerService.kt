@@ -46,6 +46,10 @@ class CustomerService(
         customerRepository.save(customer)
     }
 
+    fun emailAvailable(email: String): Boolean {
+        return !customerRepository.existsByEmail(email)
+    }
+
 //    MÉTODO PARA APENAS DELETAR
 
 //    fun delete(id: Int) {
