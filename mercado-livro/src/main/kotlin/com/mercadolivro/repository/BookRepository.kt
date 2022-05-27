@@ -14,4 +14,5 @@ interface BookRepository : JpaRepository<BookModel, Int> {
     fun findByCustomer(customer: CustomerModel): List<BookModel>
 
 //    fun findAll(pageable: Pageable): Page<BookModel>
+
 }

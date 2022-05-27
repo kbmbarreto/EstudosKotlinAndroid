@@ -22,4 +22,5 @@ class PurchaseMapper(
             price = books.sumOf { it.price }
         )
     }
+
 }
