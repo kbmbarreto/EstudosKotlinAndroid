@@ -51,7 +51,7 @@ class PasswordStatementActivity : AppCompatActivity() {
             state ->
             when(state) {
                 is State.Success -> {
-                    binding.rvPasswordStatement.adapter = state.data?.let { PasswordStatementAdapter(it) }
+                    binding.rvPasswordStatement.adapter = state.data?.let { PasswordStatementAdapter(it.body()?: listOf()) } //se for nulo passa uma lista vazia
                     binding.srlPasswordStatement.isRefreshing = false
                 }
                 is State.Error -> {

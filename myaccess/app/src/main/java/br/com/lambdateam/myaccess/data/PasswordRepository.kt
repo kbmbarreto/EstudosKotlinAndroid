@@ -22,7 +22,7 @@ object PasswordRepository {
     fun findPasswordStatement(accountHolderId: Long) = liveData {
         emit(State.Wait)
         try {
-            emit(State.Success(data = restApi.findPasswordStatement(accountHolderId)))
+            emit(State.Success(data = restApi.findPasswordStatement()))
         } catch (e: Exception) {
             Log.e(TAG, e.message, e)
             emit(State.Error(e.message))

@@ -10,6 +10,6 @@ data class Password(
     val password: String,
     val notes: String
 //    //Mapear idUser -> idPassword
-//    @SerializedName("idUser")
-//    val idUser: Long
+//    @SerializedName("username")
+//    val username: String
 )
