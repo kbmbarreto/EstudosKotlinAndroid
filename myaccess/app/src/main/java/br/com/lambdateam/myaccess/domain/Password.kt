@@ -1,12 +1,15 @@
 package br.com.lambdateam.myaccess.domain
 
+import com.google.gson.annotations.SerializedName
+
 data class Password(
     val id: Long,
     val description: String,
     val url: String,
     val userName: String,
     val password: String,
-    val notes: String,
-    //TODO: Mapear idUser -> idPassword
-    val idUser: Long?
+    val notes: String
+//    //Mapear idUser -> idPassword
+//    @SerializedName("idUser")
+//    val idUser: Long
 )

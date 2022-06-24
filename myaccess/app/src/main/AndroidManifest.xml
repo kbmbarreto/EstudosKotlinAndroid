@@ -3,7 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="br.com.lambdateam.myaccess">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,7 +17,7 @@
         android:theme="@style/Theme.Myaccess"
         tools:targetApi="31">
         <activity
-            android:name=".ui.statement.PasswordActivity"
+            android:name=".ui.statement.PasswordStatementActivity"
             android:parentActivityName=".ui.welcome.WelcomeActivity"
             android:exported="false" />
         <activity
